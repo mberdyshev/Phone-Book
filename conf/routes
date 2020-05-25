@@ -1,1 +1,5 @@
-GET    /    controllers.HomeController.index
+GET      /                 controllers.PhoneBookController.index
+GET      /phones           controllers.PhoneBookController.getPhones(phone: String ?= "", name: String ?= "")
+POST     /phones/add       controllers.PhoneBookController.addPhone
+PUT      /phones/:id       controllers.PhoneBookController.editEntry(id: String)
+DELETE   /phones/:id       controllers.PhoneBookController.deleteEntry(id: String)
