@@ -1,6 +1,6 @@
 package models
 
-case class PhoneBookEntry(phone: String, name: String)
+case class PhoneBookEntry(id: Option[Long], phone: String, name: String)
 
 object PhoneBookEntry {
   import play.api.libs.json._
